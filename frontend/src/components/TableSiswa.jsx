@@ -1,6 +1,6 @@
 function TableSiswa({ siswa, onEdit, onHapus }) {
     return (
-        <table border="1" cellPadding="8" style={{margin: "0 auto"}}>
+        <table border="1" cellPadding="8" style={{margin: "auto"}}>
             <thead>
                 <tr>
                     <th>kode</th>

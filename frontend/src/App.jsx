@@ -45,7 +45,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
+    <div style={{ padding: "20px" }}>
       <h1>Daftar Siswa</h1>
       <FormSiswa
         siswaEdit={editData}

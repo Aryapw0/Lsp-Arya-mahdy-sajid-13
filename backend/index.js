@@ -44,6 +44,7 @@ app.put("/api/siswa/:id", async (req, res) => {
 app.delete("/api/siswa/:id", async (req, res) => {
   try {
     await db.query("DELETE FROM siswa WHERE id=?", [req.params.id]);
+    await db.query( "ALTER TABLE siswa AUTO_INCREMENT = 1");
     res.json({ pesan: "Data dihapus" });
   } catch (err) {
     res.status(500).json({ pesan: err.message });
